@@ -1,13 +1,10 @@
 
 declare const List: {
-    Usage: string = "qdb <database> list";
-    Description: string = "Lists this database's tables with the amount of rows for each table.";
-    Examples: string[] = [
-        "qdb Users.qdb list",
-        "qdb ./Internal/Guilds.qdb list"
-    ];
+    Usage: string;
+    Description: string;
+    Examples: string[];
 
-    Arguments: number = 0;
+    Arguments: number;
 
     Execute: (Path: any) => boolean;
 }

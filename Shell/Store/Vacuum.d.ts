@@ -1,12 +1,10 @@
 
 declare const Vacuum: {
-    Usage: string = "qdb <database> vacuum"; 
-    Description: string = "Rebuilds this database, repacking it into a minimal amount of disk space.";
-    Examples: string[] = [
-        "qdb Guilds.qdb vacuum",
-    ];
+    Usage: string; 
+    Description: string;
+    Examples: string[];
 
-    Arguments: number = 0;
+    Arguments: number;
 
     Execute: (Path: any) => boolean;
 }

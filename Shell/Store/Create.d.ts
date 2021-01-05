@@ -1,13 +1,10 @@
 
 declare const Create: {
-    Usage: string = "qdb <database> create <name>";
-    Description: string = "Adds an additional table in the given database file.";
-    Examples: string[] = [
-        "qdb Users.qdb create Users",
-        "qdb ./Internal/Guilds.qdb create Profiles"
-    ];
+    Usage: string;
+    Description: string;
+    Examples: string[];
 
-    Arguments: number = 1;
+    Arguments: number;
 
     Execute: (Path: any, Arguments: any) => true | void;
 };
